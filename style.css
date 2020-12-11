@@ -7,6 +7,7 @@
 
 body {
   background-color: #47414E;
+  margin-bottom: 0px;
 }
 
 /* I want the header and footer to stand out from the body with similar properties so I created a multiple element selector */
