@@ -7,7 +7,6 @@
 
 body {
   background-color: #47414E;
-  margin-bottom: 0px;
 }
 
 /* I want the header and footer to stand out from the body with similar properties so I created a multiple element selector */
@@ -26,15 +25,7 @@ h1, h3 {
   line-height: 5px;
 }
 
-/* Nesting the h4 properties of the header specifically so it can be styled differently from the other h4s in the contact section */
-header h4 {
-  font-size: 18px;
-  letter-spacing: 1px;
-  margin-bottom: 0px;
-  font-family: 'Arial Narrow', Helvetica, sans-serif;
-  font-weight: 50px;
-}
-
+/* Nesting the p properties of the header and footer specifically so it can be styled differently from the other h4s in the contact section */
 header p {
   margin-top: 0px;
   font-size: 15px;
@@ -50,6 +41,15 @@ footer p {
 #center {
   text-align: center;
 }
+
+.large {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+  font-family: 'Arial Narrow', Helvetica, sans-serif;
+  font-weight: 200px;
+}
+
 
 /* Adjusting the border-radius to the picture class to create a circle-shaped photo hopefully centered on the page */
 .picture {
@@ -74,10 +74,14 @@ footer p {
 
 .contact {
   text-align: center;
-  line-height: 3px;
+  line-height: 20px;
   padding-right: 10px;
   color: aliceblue;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+  font-weight: 100px;
 }
 
 
@@ -90,19 +94,19 @@ hr {
 
 /* Declaring different link states with pseudo-classes */
 a:link {
-  color: rgb(202, 158, 201);
-}
-
-a:visited {
   color: rgb(176, 235, 240);
 }
 
+a:visited {
+  color: rgb(202, 158, 201);
+}
+
 a:active {
-  color: rgb(73, 153, 153);
+  color: lightgray;
 }
 
 a:hover {
-  color: rgb(185, 127, 159);
+  color: rgb(104, 197, 206);
   font-size: 18px;
 }
 
