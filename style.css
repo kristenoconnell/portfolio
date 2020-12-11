@@ -1,0 +1,116 @@
+/* Standard box-sizing for all HTML elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Creating a dark background for the body to contrast with light headers and footers */
+
+body {
+  background-color: #47414E;
+}
+
+/* I want the header and footer to stand out from the body with similar properties so I created a multiple element selector */
+header, footer {
+  background-color: white;
+  border: 3px solid white;
+  padding: 0px;
+  color: #47414E;
+  font-family: 'Roboto Slab', Times, serif;
+  text-align: center; 
+}
+
+h1, h3 {
+  font-family: Lora, Times, serif;
+  letter-spacing: 3px;
+  line-height: 5px;
+}
+
+/* Nesting the h4 properties of the header specifically so it can be styled differently from the other h4s in the contact section */
+header h4 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+  font-family: 'Arial Narrow', Helvetica, sans-serif;
+  font-weight: 50px;
+}
+
+header p {
+  margin-top: 0px;
+  font-size: 15px;
+  color: #47414E;
+  font-family: 'Arial Narrow', Helvetica, sans-serif;
+}
+
+footer p {
+  color: #47414E;
+}
+
+/* Create an id for the div container to center the image */
+#center {
+  text-align: center;
+}
+
+/* Adjusting the border-radius to the picture class to create a circle-shaped photo hopefully centered on the page */
+.picture {
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  margin: 5px 200px;
+}
+
+/* Style the three section classes */
+.intro {
+  text-align: center;
+  color: aliceblue;
+}
+
+.about-me {
+  font-family: 'Arial Narrow', Helvetica, sans-serif;
+  letter-spacing: 2px;
+  color: aliceblue;
+  margin-left: 10px;
+}
+
+.contact {
+  text-align: center;
+  line-height: 3px;
+  padding-right: 10px;
+  color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+hr {
+  background-color: rgb(185, 127, 159);
+  border: 1px rgb(185, 127, 159) solid;
+  padding: 1px 0px;
+  margin: 0px 0px;
+}
+
+/* Declaring different link states with pseudo-classes */
+a:link {
+  color: rgb(202, 158, 201);
+}
+
+a:visited {
+  color: rgb(176, 235, 240);
+}
+
+a:active {
+  color: rgb(73, 153, 153);
+}
+
+a:hover {
+  color: rgb(185, 127, 159);
+  font-size: 18px;
+}
+
+/* Get rid of the bullet points in the ul and center the list with padding */
+ul {
+  list-style-type: none;
+  padding-right: 40%;
+  padding-left: 40%;
+}
+
+
+
