@@ -1,121 +1,238 @@
-/* Standard box-sizing for all HTML elements */
-* {
-  box-sizing: border-box;
-}
-
-/* Creating a dark background for the body to contrast with light headers and footers */
 
 body {
-  background-color: #47414E;
+  background-color: #fff;
+  color: #000;
 }
 
-/* I want the header and footer to stand out from the body with similar properties so I created a multiple element selector */
-header, footer {
-  background-color: white;
-  border: 3px solid white;
-  padding: 0px;
-  color: #47414E;
-  font-family: 'Roboto Slab', Times, serif;
-  text-align: center; 
+header {
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 40px;
+  font-family: Oswald;
 }
 
-h1, h3 {
-  font-family: Lora, Times, serif;
+header h1 {
+  padding-top: 10px;
   letter-spacing: 3px;
-  line-height: 5px;
+  text-align: center;
+  margin: 0;
+  font-size: 56px;
 }
 
-/* Nesting the p properties of the header and footer specifically so it can be styled differently from the other h4s in the contact section */
-header p {
-  margin-top: 0px;
-  font-size: 15px;
-  color: #47414E;
-  font-family: 'Arial Narrow', Helvetica, sans-serif;
-}
-
-footer p {
-  color: #47414E;
-}
-
-/* Create an id for the div container to center the image */
-#center {
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
 }
 
-.large {
-  font-size: 18px;
-  letter-spacing: 1px;
-  margin-bottom: 0px;
-  font-family: 'Arial Narrow', Helvetica, sans-serif;
-  font-weight: 200px;
-}
-
-
-/* Adjusting the border-radius to the picture class to create a circle-shaped photo hopefully centered on the page */
-.picture {
-  border-radius: 100%;
-  width: 400px;
-  height: 400px;
-  margin: 5px 200px;
-}
-
-/* Style the three section classes */
-.intro {
+header nav ul {
+  list-style: none;
+  padding-left: 0px;
   text-align: center;
-  color: aliceblue;
 }
 
-.about-me {
-  font-family: 'Arial Narrow', Helvetica, sans-serif;
-  letter-spacing: 2px;
-  color: aliceblue;
-  margin-left: 10px;
-}
-
-.contact {
-  text-align: center;
-  line-height: 20px;
-  padding-right: 10px;
-  color: aliceblue;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 18px;
-  letter-spacing: 1px;
-  margin-bottom: 0px;
-  font-weight: 100px;
-}
-
-
-hr {
-  background-color: rgb(185, 127, 159);
-  border: 1px rgb(185, 127, 159) solid;
-  padding: 1px 0px;
-  margin: 0px 0px;
-}
-
-/* Declaring different link states with pseudo-classes */
-a:link {
-  color: rgb(176, 235, 240);
-}
-
-a:visited {
-  color: rgb(226, 202, 226);
-}
-
-a:active {
-  color: rgb(211, 211, 211);
-}
-
-a:hover {
-  color: rgb(104, 197, 206);
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: lowercase;
+  margin: 0 0 20px 0;
   font-size: 20px;
 }
 
-/* Get rid of the bullet points in the ul and center the list with padding */
-ul {
-  list-style-type: none;
-  padding-right: 40%;
-  padding-left: 40%;
+
+.home {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
+
+.item {
+  flex: 1;
+  align-content: center;
+  margin: 0 10px;
+}
+
+.item-double {
+  flex: 2;
+  align-content: center;
+}
+
+h2 {
+  font-family: Oswald;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 40px;
+  
+}
+.home-text {
+  font-family: Roboto;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.image {
+  width: 100%;
+}
+
+.about {
+  font-family: Roboto;
+  letter-spacing: 1px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-title, .portfolio-title, .contact-title {
+  font-family: Oswald;
+  text-align: center;
+  font-size: 30px;
+  text-transform: lowercase;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.group img {
+  width: 100%;  
+}
+
+.portfolio h4 a {
+  font-family: Oswald;
+  font-weight: 200;
+  font-size: 26px;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: #000;
+}
+
+.portfolio-text {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+.contact {
+  background-color: #000;
+  color: #fff;
+}
+
+.contact h3 {
+  padding-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  font-family: Roboto;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  margin-bottom: 3px;
+  margin-top: 5px;
+  align-self: center;
+}
+
+input, textarea {
+  width: 30%;
+  align-self: center;
+  margin-bottom: 5px;
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+textarea {
+  height: 80px;
+  margin-bottom: 5px;
+}
+
+button {
+  width: 15%;
+  align-self: center;
+  margin-bottom: 5px;
+  background-color: #fff;
+  font-family: Roboto;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  padding: 20px;
+  font-size: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  
+}
+
+@media all and (min-width: 600px) {
+
+  header h1 {
+    padding-left: 10px;
+    padding-top: 30px;
+    text-align: left;
+  }
+  
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+
+  header nav ul li a:hover {
+    font-size: 22px;
+  }
+
+   .home-text {
+    margin-left: 20px;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20px;
+   }
+
+   .image {
+     margin-left: 10px;
+   }
+
+   .about {
+     display: flex;
+     flex-direction: row;
+   } 
+
+   .about-title {
+     align-self: center;
+   }
+
+   .about-text {
+     margin-right: 10px;
+   }
+
+  .group {
+    flex-direction: row;
+  }
+   .portfolio h4 a:hover {
+     font-size: 28px;
+   }
+   
+   .footer a:hover {
+     font-size: 20px;
+   }
+} 
 
 
 
