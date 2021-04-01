@@ -8,5 +8,7 @@ For now, you will find: a favorite portrait; a little bit about me; an introduct
 Stay tuned for more updates as my developer education continues! 
 
 
+Live link to my portfolio: https://kristenoconnell.github.io/portfolio/
+
 
 
